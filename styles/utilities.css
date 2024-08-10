@@ -1,0 +1,51 @@
+.showcase {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.title-lg {
+  font: var(--title-lg);
+  color: var(--base-gray-600);
+}
+
+.title-md {
+  font: var(--title-md);
+  color: var(--base-gray-600);
+}
+
+.title-sm {
+  font: var(--title-sm);
+  color: var(--base-gray-600)
+}
+
+.subtitle {
+  font: var(--subtitle);
+  color: var(--base-gray-500);
+}
+
+.text-sm {
+  font: var(--text-sm);
+  color: var(--base-gray-400);
+}
+
+.color-red {
+  color: var(--color-red);
+}
+
+.color-purple {
+  color: var(--color-purple);
+}
+
+.text-md {
+  font: var(--text-md);
+}

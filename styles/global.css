@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-red: #E3646E;
+  --color-purple: #BB72E9;
+  --color-blue: #3996DB;
+  --color-green: #82BC4F;
+  --color-yellow: #EABD5F;
+  --base-gray-100: #0D0E11;
+  --base-gray-200: #16181D;
+  --base-gray-300: #292C34;
+  --base-gray-400: #878EA1;
+  --base-gray-500: #C0C4C3;
+  --base-gray-600: #E2E4E9;
+  /* Typography */
+  --asap-font: 'Asap', sans-serif;
+  --inconsolata-font: 'Inconsolata', sans-serif;
+  --mavenpro-font: 'Maven Pro', sans-serif;
+  --title-lg: 700 56px/120% var(--asap-font); 
+  --title-md: 700 24px/120% var(--asap-font); 
+  --title-sm: 700 16px/120% var(--asap-font);
+  --subtitle: 400 20px/120% var(--inconsolata-font);
+  --text-md: 400 16px/140% var(--mavenpro-font);
+  --text-sm: 400 14px/140% var(--mavenpro-font);
+}
+
+body {
+  background-color: var(--base-gray-100);
+}
+
+.container {
+  max-width: 1366px;
+  padding-inline: 163px;
+}
+
+h1,h2,h3 {
+ font: inherit;
+}
+
+.tag-item {
+  display: flex;
+  padding: 8px 16px;
+  border-radius: 25px;
+  align-items: center;
+  justify-items: center;
+  gap: 8px;
+  background-color: var(--base-gray-300);
+  font: var(--text-md);
+  color: var(--base-gray-500);
+
+  img {
+    width: 24px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--base-gray-300);
+  border-radius: 12px;
+  padding: 12px;
+  width: 306px;
+  border: 1.5px solid #ff000000;
+
+  img {
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    border: 1.5px solid var(--base-gray-400);
+  }
+
+}
+
+.card1 {
+  padding: 20px;
+  border: 2px solid var(--base-gray-200);
+  border-radius: 12px;
+  width: 280px;
+
+  img {
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-top: 8px;
+  }
+}
+
+.social-btn {
+  display: flex;
+  justify-content: space-between;
+  
+  background-color: var(--base-gray-300);
+  padding: 20px;
+  width: 400px;
+  border: 1.5px solid #ffffff00;
+  border-radius: 8px;
+
+  font: var(--text-md);
+  font-weight: 500;
+
+  color: var(--base-gray-500);
+
+  .btn-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .icon-color {
+    fill: var(--base-gray-500);
+  }
+
+  &:hover {
+    color: var(--color-blue);
+    border: 1.5px solid var(--color-blue);
+    cursor: pointer;
+
+    .icon-color{
+      fill: var(--color-blue);
+    }
+  }
+}

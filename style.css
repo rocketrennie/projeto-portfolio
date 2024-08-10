@@ -1,0 +1,29 @@
+@import url(./styles/index.css);
+
+#social-btn {
+  display: flex;
+  justify-content: space-between;
+  
+  background-color: var(--base-gray-300);
+  padding: 20px;
+  width: 400px;
+  border: 1px solid #ffffff00;
+  border-radius: 8px;
+
+  font-weight: 500;
+
+  color: var(--base-gray-500);
+
+
+  .icon-color {
+    fill: var(--base-gray-500);
+  }
+
+  &:hover {
+
+    .icon-color{
+      fill: var(--color-blue);
+    }
+    color: var(--color-blue);
+  }
+}
